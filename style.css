@@ -1,24 +1,29 @@
-body{
-    display: flex;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: block;
     background: linear-gradient(to right, #333, #524545);
     color: white;
     margin: 25px auto;
-    display: block;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
 }
-#mainNameText{
+
+#mainNameText {
+    padding-bottom: 10px;
     text-align: center;
     font-size: 50px;
-    border: 3px solid #333;
+    border: 3px solid #232323;
     width: 500px;
     border-radius: 30px;
     background-color: #333;
-    margin-top: 25px;
-    margin-left:auto;
-    margin-right: auto;
-    color: #666
+    margin: 25px auto 25px;
+    color: #666;
 }
-.textNoName{
+
+.textNoName {
     width: 100%;
     background-color: #333;
     padding-top: 4px;
@@ -26,46 +31,103 @@ body{
     font-size: 20px;
     text-align: left;
     border-top: 5px solid;
-   border-image: linear-gradient(to right, #ff00cc, #0000ff);
-   border-image-slice: 1;
-   border-image-outset: 0;
+    border-image: linear-gradient(to right, #ff00cc, #0000ff);
+    border-image-slice: 1;
+    border-image-outset: 0;
 }
-#FirstApp{
- padding-top: 0px;
- border: 3px solid #1d5b7d;
- border-radius: 10px;
- margin: 10px auto;
- width: 200px;
- height: 255px;
- text-align: center;
+/* FirstApp section */
+#FirstApp {
+    padding-top: 0px;
+    border: 3px solid #1d5b7d;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 150px;
+    height: 200px;
+    text-align: center;
 }
-#saveValue{
-    
-}
-#textBeforeCount{
+
+#textBeforeCount {
     font-size: 19px;
     font-weight: bold;
 }
-#counterValue{
+
+#counterValue {
     font-size: 30px;
     font-weight: bolder;
     margin-bottom: -10px;
 }
+
 .button1{
     font-size: 25px;
     border-radius: 30px;
-    
     background-color: #333;
 }
 
-footer{
+    /* Second app section*/
+ #second-app {
+    display: block;
+    margin: 25px auto auto;
+    border: 10px ridge green;
+    border-radius: 10px;
+    background-image: url('images/blackJack-background.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 330px;
+
+}
+#second-app h2{
+    background-color: darkgreen;
+    text-align: center;
+    width: 150px;
+    margin: 25px auto 0;
+    border-radius: 30px;
+    border:2px solid green
+}
+#second-app p {
+    text-align: center;
+    margin: 2px auto auto 0;
+    font-size: 20px;
+    border-bottom: 4px dotted #04fd31;
+
+}
+#cards-box{
+    float: left;
+    width: 200px;
+    height: 100px;
+    border-bottom: 4px dotted #04fd31;
+    border-right: 4px dotted #04fd31;
+}
+
+#cards-box span{
+    font-size: 30px;
+    
+}
+
+#cards-value {
+    text-align: center;
+    margin-top: 15px
+}
+
+#sum-box {
+    float: right;
+    width: 200px;
+    height: 100px;
+    border-bottom: 4px dotted #04fd31;
+    border-left: 4px dotted #04fd31;
+}
+
+    /* footer section */
+footer {
+    padding: 20px;
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 3px;
+    font-size: 20px;
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 30px;
 }
 
 a{
