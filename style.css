@@ -8,8 +8,9 @@ body{
 }
 #mainNameText{
     text-align: center;
+    font-size: 50px;
     border: 3px solid #333;
-    width: 230px;
+    width: 500px;
     border-radius: 30px;
     background-color: #333;
     margin-top: 25px;
@@ -22,26 +23,33 @@ body{
     background-color: #333;
     padding-top: 4px;
     padding-bottom: 4px;
+    font-size: 20px;
     text-align: left;
-    border-top: 2px solid;
+    border-top: 5px solid;
    border-image: linear-gradient(to right, #ff00cc, #0000ff);
    border-image-slice: 1;
    border-image-outset: 0;
 }
 #FirstApp{
  padding-top: 0px;
- border: 2px solid #1d5b7d;
+ border: 3px solid #1d5b7d;
  border-radius: 10px;
  margin: 10px auto;
- width: 155px;
- height: 300px;
+ width: 200px;
+ height: 255px;
  text-align: center;
+}
+#saveValue{
+    
 }
 #textBeforeCount{
     font-size: 19px;
+    font-weight: bold;
 }
 #counterValue{
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: -10px;
 }
 .button1{
     font-size: 25px;
@@ -60,3 +68,6 @@ footer{
     width: 100%;
 }
 
+a{
+    color: red;
+}
