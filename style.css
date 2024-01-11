@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    background: linear-gradient(to right, #333, #524545);
+    color: white;
+    margin: 25px auto;
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+}
+#mainNameText{
+    text-align: center;
+    border: 3px solid #333;
+    width: 230px;
+    border-radius: 30px;
+    background-color: #333;
+    margin-top: 25px;
+    margin-left:auto;
+    margin-right: auto;
+    color: #666
+}
+.textNoName{
+    width: 100%;
+    background-color: #333;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: left;
+    border-top: 2px solid;
+   border-image: linear-gradient(to right, #ff00cc, #0000ff);
+   border-image-slice: 1;
+   border-image-outset: 0;
+}
+#FirstApp{
+ padding-top: 0px;
+ border: 2px solid #1d5b7d;
+ border-radius: 10px;
+ margin: 10px auto;
+ width: 155px;
+ height: 300px;
+ text-align: center;
+}
+#textBeforeCount{
+    font-size: 19px;
+}
+#counterValue{
+    font-size: 20px;
+}
+.button1{
+    font-size: 25px;
+    border-radius: 30px;
+    
+    background-color: #333;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
