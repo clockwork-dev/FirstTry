@@ -84,6 +84,9 @@ body {
     border-radius: 30px;
     border:2px solid green
 }
+
+
+
 #second-app p {
     text-align: center;
     margin: 2px auto auto 0;
@@ -115,6 +118,35 @@ body {
     height: 100px;
     border-bottom: 4px dotted #04fd31;
     border-left: 4px dotted #04fd31;
+}
+
+#sum-value {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#sum-value span{
+    font-size: 30px;
+}
+
+#game-buttons {
+    margin: 150px auto 0px auto;
+    text-align: center;
+    height: 70px;
+    width: 135px;
+    
+}
+
+#game-buttons button{
+    border-radius: 10px;
+    border: 0 solid;
+    margin-top: 5px;
+    width: 133px;
+    height: 30px;
+    background-color: #c5e912;
+    font-weight: bold;
+    font-size: 19px;
+    color: rgb(2, 57, 2);
 }
 
     /* footer section */
