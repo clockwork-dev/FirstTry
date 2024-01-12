@@ -54,16 +54,29 @@ function counterAppSave(){
 // function section for Second Game//
 
 function startSecondGame(){
-    secondGameMainText.innerText = ""
+    
+    secondGameMainText.innerText = "You start a game";
     takeCardButton.onclick = takeCard;
     firstCard = getRandomCardValue();
     secondCard = getRandomCardValue();
     let cardsArray = [firstCard,secondCard];
+    let cardsArraySum = cardsArray.reduce((a,b)=> a+b);
+    if (cardsArraySum === 21){
+        secondGameMainText.innerText = 'You got a BlackJack!! \n Press button to start new game';
+    } else if (cardsArraySum > 21){
+        secondGameMainText.innerText = 'GAME OVER \n You scored more than 21 points.';
+    };
    
     function takeCard(){
+        if (cardsArray.reduce((a,b)=> a+b) < 21 ) {
         cardsArray.push(getRandomCardValue());
         secondGameCardsValue.innerText = cardsArray.join(" ");
         secondGameSumOfCardsValue.innerText = cardsArray.reduce((a,b)=> a+b);
+        } else if (cardsArraySum === 21 ){
+            secondGameMainText.innerText = 'You got a BlackJack!! \n Press button to start new game';
+        } else {
+            secondGameMainText.innerText = 'GAME OVER \n You scored more than 21 points.'
+        }
     };
 
     function getRandomCardValue(){
@@ -82,6 +95,8 @@ function startSecondGame(){
             return parseInt(rank, 10);
         };
     };
+
     secondGameCardsValue.innerText = cardsArray.join(" ");
     secondGameSumOfCardsValue.innerText = cardsArray.reduce((a,b)=> a+b);
+    secondGameMainText.innerText('Want to play a round? \n Press button to start new game')
 }
