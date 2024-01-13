@@ -46,10 +46,10 @@ function counterAppSave(){
     } else  {
         saveValue.innerText = " ";
         counter = 0;
-        limitCounter = 0
+        saveLimitValue = 0
     };
     counter = 0;
-    limitCounter ++;
+    saveLimitValue ++;
 };
 // function section for Second Game//
 
@@ -68,14 +68,16 @@ function startSecondGame(){
     };
    
     function takeCard(){
-        if (cardsArray.reduce((a,b)=> a+b) < 21 ) {
         cardsArray.push(getRandomCardValue());
+        let cardsArraySum = cardsArray.reduce((a, b) => a + b);
+
         secondGameCardsValue.innerText = cardsArray.join(" ");
-        secondGameSumOfCardsValue.innerText = cardsArray.reduce((a,b)=> a+b);
-        } else if (cardsArraySum === 21 ){
+        secondGameSumOfCardsValue.innerText = cardsArraySum;
+
+        if (cardsArraySum > 21) {
+            secondGameMainText.innerText = 'GAME OVER \n You scored more than 21 points.';
+        } else if (cardsArraySum === 21) {
             secondGameMainText.innerText = 'You got a BlackJack!! \n Press button to start new game';
-        } else {
-            secondGameMainText.innerText = 'GAME OVER \n You scored more than 21 points.'
         }
     };
 
